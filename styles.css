@@ -19,6 +19,7 @@ nav {
   gap: 0.5rem;
   border-bottom: solid 1px #aaa;
   background-color: #eee;
+  height: 5vh;
 }
 
 nav:hover button{
@@ -26,8 +27,11 @@ nav:hover button{
   background-color: #fff;
 }
 
-nav button {
+nav:hover p{
   display: none;
+}
+
+nav button {
   min-width: 9rem;
   padding: 0.5rem;
   border-radius: 0.2rem;
@@ -37,15 +41,14 @@ nav button {
   color: #555;
 }
 
+nav .oculto{
+  display: none;
+}
+
 nav button:hover{
   background-color: #979797;
   border-color: #fff;
 }
-
-/*nav button[aria-current='page'] {
-  color: #000;
-  background-color: #d4d4d4;
-}*/
 
 main {
   padding: 1rem;
