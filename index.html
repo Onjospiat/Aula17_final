@@ -1,23 +1,39 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
   <head>
     <title>Home</title>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
-    <!--
-      Need a visual blank slate?
-      Remove all code in `styles.css`!
-    -->
     <link rel="stylesheet" href="styles.css" />
     <script type="module" src="script.js"></script>
   </head>
   <body>
     <nav>
-      <a href="/" aria-current="page">Home</a>
-      <a href="/page2.html">Other page</a>
+      <button onclick="rolagem('nav')">Início</button>
+      <button onclick="rolagem('sec1')">Seção 1</button>
+      <button onclick="rolagem('sec2')">Seção 2</button>
+      <button onclick="rolagem('contatos')">Contatos</button>
     </nav>
     <main>
-      <h1>Home page</h1>
+      <h1 id="nav">Página inicial</h1>
+      <p>Texto sobre alguma coisa louca</p>
+      <div id="sec1">
+        <h2>Primeira seção do site</h2>
+        <p>Aqui tem alguma coisa descrevendo o site em questão</p>
+      </div>
+      <div id="sec2">
+        <h2>Segunda seção do site</h2>
+        <p>Aqui vem uma galeria de imagens</p>
+        <div id="grid_imagens">
+          <img src="IMG/Pollux.png" alt="Pollux com uma moeda na mão"/>
+          <img src="IMG/EGGZY.gif" alt="Eggzy rodando"/>
+          <img src="IMG/primus guarda_00004 (1).jpg" alt="Primus guardando um servidor"/>
+          <img src="IMG/SCH 2 - Arte Mateus - Thais floresta_00001.jpg" alt="Thais Perta salvando o meio ambiente"/>
+        </div>
+      </div>
+      <div id="contatos">
+        <p>Contatos:<br>Telefone<br>Email<br>Redes sociais<br>@2025</p>
+      </div>
     </main>
   </body>
 </html>
