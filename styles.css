@@ -51,7 +51,7 @@ nav button:hover{
 }
 
 main {
-  padding: 1rem;
+  /*padding: 1rem;*/
 }
 
 h1 {
@@ -69,6 +69,19 @@ img{
   max-width: 400px;
   margin: 1vw;
 
+}
+
+#init,#sec1,#sec2,#contatos{
+  border-bottom:1px solid #aaa;
+  padding: 1rem;
+}
+
+#init,#sec2{
+  background-color: rgba(0, 200, 255, 0.1);
+}
+
+#sec1,#contatos{
+  background-color: rgba(0,255,200,0.1);
 }
 
 @media screen and (max-width:650px){
